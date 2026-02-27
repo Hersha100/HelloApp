@@ -1,12 +1,17 @@
-public class OOPS_Banner {
+public class OOPS_Banner4 {
 
     public static void main(String[] args) {
-        System.out.println("    **    " + " " + "    **    " + " " + "********" + " " + "    ****");
-        System.out.println("  **  **  " + " " + "  **  **  " + " " + "**    **" + " " + "  **     ");
-        System.out.println("**      **" + " " + "**      **" + " " + "**    **" + " " + "**      ");
-        System.out.println("**      **" + " " + "**      **" + " " + "********" + " " + " *****  ");
-        System.out.println("**      **" + " " + "**      **" + " " + "**      " + " " + "      **");
-        System.out.println("    **    " + " " + "    **    " + " " + "**      " + " " + "**  **  ");
-        System.out.println("  **   ** " + " " + "  **   ** " + " " + "**      " + " " + "  **    ");
+        String[] lines = {
+            String.join(" ", "    **    ", "    **    ", "********", "    ****"),
+            String.join(" ", "  **  **  ", "  **  **  ", "**    **", "  **    "),
+            String.join(" ", "**      **", "**      **", "**    **", "**      "),
+            String.join(" ", "**      **", "**      **", "********", " *****  "),
+            String.join(" ", "**      **", "**      **", "**      ", "      **"),
+            String.join(" ", "  **   ** ", "  **   ** ", "**      ", "**   ** "),
+            String.join(" ", "    **    ", "    **    ", "**      ", "  ****  "),};
+
+        for (String line : lines) {
+            System.out.println(line);
+        }
     }
 }
